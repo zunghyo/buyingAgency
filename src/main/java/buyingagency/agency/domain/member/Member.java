@@ -1,5 +1,6 @@
 package buyingagency.agency.domain.member;
 
+import buyingagency.agency.domain.common.DataInfo;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,4 +18,6 @@ public class Member {
     private String email;
     private String phone;
 
+    @Embedded
+    private DataInfo dataInfo;
 }
